@@ -1,0 +1,25 @@
+{
+  "name": "@djengo/app-helpers",
+  "version": "1.0.0",
+  "description": "Helper utilities and enums for Djengo proto contracts.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "enums.ts",
+    "helpers.ts",
+    "index.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AI-ZeeK/djengo-app-helpers.git"
+  },
+  "keywords": [
+    "djengo",
+    "app",
+    "helpers",
+    "enums",
+    "utilities"
+  ],
+  "author": "DJENGO Team",
+  "license": "MIT"
+}
