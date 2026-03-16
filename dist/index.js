@@ -16,7 +16,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Helpers = exports.enums = void 0;
+exports.AppHelper = exports.enums = void 0;
 // Export all type definitions
 // Export TypeScript enums for use across microservices
 __exportStar(require("./src/enums"), exports);
@@ -68,5 +68,5 @@ exports.enums = {
     },
 };
 var helpers_1 = require("./src/helpers");
-Object.defineProperty(exports, "Helpers", { enumerable: true, get: function () { return helpers_1.Helpers; } });
+Object.defineProperty(exports, "AppHelper", { enumerable: true, get: function () { return helpers_1.AppHelper; } });
 //# sourceMappingURL=index.js.map

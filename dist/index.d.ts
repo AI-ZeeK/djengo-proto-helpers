@@ -52,5 +52,5 @@ export type SnakeToCamelCase<S extends string> = S extends `${infer T}_${infer U
 export type KeysToCamelCase<T> = {
     [K in keyof T as SnakeToCamelCase<Extract<K, string>>]: T[K] extends object ? KeysToCamelCase<T[K]> : T[K];
 };
-export { Helpers } from "./src/helpers";
+export { AppHelper } from "./src/helpers";
 //# sourceMappingURL=index.d.ts.map

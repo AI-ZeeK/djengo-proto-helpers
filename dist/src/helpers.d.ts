@@ -1,4 +1,4 @@
-export declare class Helpers {
+export declare class AppHelper {
     /**
      * Generates a random OTP (One-Time Password)
      * @param options Configuration options for OTP generation

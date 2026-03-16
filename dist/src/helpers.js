@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Helpers = void 0;
+exports.AppHelper = void 0;
 var Timeline;
 (function (Timeline) {
     Timeline["_1m"] = "1m";
@@ -9,7 +9,7 @@ var Timeline;
     Timeline["_1y"] = "1y";
     Timeline["all"] = "all";
 })(Timeline || (Timeline = {}));
-class Helpers {
+class AppHelper {
     /**
      * Generates a random OTP (One-Time Password)
      * @param options Configuration options for OTP generation
@@ -140,14 +140,14 @@ class Helpers {
      */
     static toSnakeCase(obj) {
         if (Array.isArray(obj)) {
-            return obj.map(Helpers.toSnakeCase);
+            return obj.map(AppHelper.toSnakeCase);
         }
         else if (obj !== null && typeof obj === "object") {
             const converted = Object.fromEntries(Object.entries(obj).map(([k, v]) => [
                 k.replace(/[A-Z]/g, (letter) => `_${letter.toLowerCase()}`),
-                Helpers.toSnakeCase(v),
+                AppHelper.toSnakeCase(v),
             ]));
-            return Helpers.isEmptyOrNull(converted);
+            return AppHelper.isEmptyOrNull(converted);
         }
         return obj;
     }
@@ -156,14 +156,14 @@ class Helpers {
      */
     static toCamelCase(obj) {
         if (Array.isArray(obj)) {
-            return obj.map(Helpers.toCamelCase);
+            return obj.map(AppHelper.toCamelCase);
         }
         else if (obj !== null && typeof obj === "object") {
             const converted = Object.fromEntries(Object.entries(obj).map(([k, v]) => [
                 k.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase()),
-                Helpers.toCamelCase(v),
+                AppHelper.toCamelCase(v),
             ]));
-            return Helpers.isEmptyOrNull(converted);
+            return AppHelper.isEmptyOrNull(converted);
         }
         return obj;
     }
@@ -304,5 +304,5 @@ class Helpers {
         return where;
     }
 }
-exports.Helpers = Helpers;
+exports.AppHelper = AppHelper;
 //# sourceMappingURL=helpers.js.map
