@@ -5,7 +5,7 @@ enum Timeline {
   _1y = "1y",
   all = "all",
 }
-export class Helpers {
+export class AppHelper {
   /**
    * Generates a random OTP (One-Time Password)
    * @param options Configuration options for OTP generation
@@ -161,15 +161,15 @@ export class Helpers {
    */
   static toSnakeCase(obj: any): any {
     if (Array.isArray(obj)) {
-      return obj.map(Helpers.toSnakeCase);
+      return obj.map(AppHelper.toSnakeCase);
     } else if (obj !== null && typeof obj === "object") {
       const converted = Object.fromEntries(
         Object.entries(obj).map(([k, v]) => [
           k.replace(/[A-Z]/g, (letter) => `_${letter.toLowerCase()}`),
-          Helpers.toSnakeCase(v),
+          AppHelper.toSnakeCase(v),
         ]),
       );
-      return Helpers.isEmptyOrNull(converted);
+      return AppHelper.isEmptyOrNull(converted);
     }
     return obj;
   }
@@ -179,15 +179,15 @@ export class Helpers {
    */
   static toCamelCase(obj: any): any {
     if (Array.isArray(obj)) {
-      return obj.map(Helpers.toCamelCase);
+      return obj.map(AppHelper.toCamelCase);
     } else if (obj !== null && typeof obj === "object") {
       const converted = Object.fromEntries(
         Object.entries(obj).map(([k, v]) => [
           k.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase()),
-          Helpers.toCamelCase(v),
+          AppHelper.toCamelCase(v),
         ]),
       );
-      return Helpers.isEmptyOrNull(converted);
+      return AppHelper.isEmptyOrNull(converted);
     }
     return obj;
   }

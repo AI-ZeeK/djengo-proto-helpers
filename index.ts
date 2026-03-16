@@ -118,4 +118,4 @@ export type KeysToCamelCase<T> = {
     : T[K];
 };
 
-export { Helpers } from "./src/helpers";
+export { AppHelper } from "./src/helpers";
