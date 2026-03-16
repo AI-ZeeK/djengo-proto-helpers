@@ -1,3 +1,113 @@
+export enum COMPANY_SERVICE_TYPE_ENUM {
+  SPA = "SPA",
+  HOTEL = "HOTEL",
+  RESTAURANT = "RESTAURANT",
+  SUPERMARKET = "SUPERMARKET",
+  HOSPITAL = "HOSPITAL",
+  GYM = "GYM",
+}
+export enum DAY_OF_WEEK_ENUM {
+  MONDAY = "MONDAY",
+  TUESDAY = "TUESDAY",
+  WEDNESDAY = "WEDNESDAY",
+  THURSDAY = "THURSDAY",
+  FRIDAY = "FRIDAY",
+  SATURDAY = "SATURDAY",
+  SUNDAY = "SUNDAY",
+}
+
+export enum BED_SIZE_ENUM {
+  SINGLE = "SINGLE",
+  DOUBLE = "DOUBLE",
+  QUEEN = "QUEEN",
+  KING = "KING",
+  CALIFORNIA_KING = "CALIFORNIA_KING",
+  TWIN = "TWIN",
+  TWIN_XL = "TWIN_XL",
+  BUNK = "BUNK",
+  SOFA_BED = "SOFA_BED",
+}
+
+export enum ROOM_LOCATION_TYPE_ENUM {
+  NORTH_WING = "NORTH_WING",
+  SOUTH_WING = "SOUTH_WING",
+  EAST_WING = "EAST_WING",
+  WEST_WING = "WEST_WING",
+  CENTRAL_AREA = "CENTRAL_AREA",
+  PENTHOUSE = "PENTHOUSE",
+}
+
+export enum TABLE_LOCATION_TYPE_ENUM {
+  WINDOW = "WINDOW",
+  CENTER_AREA = "CENTER_AREA",
+  ENTRANCE = "ENTRANCE",
+  BAR = "BAR",
+  PATIO = "PATIO",
+  QUIET_CORNER = "QUIET_CORNER",
+  HIGH_TRAFFIC_AREA = "HIGH_TRAFFIC_AREA",
+  PRIVATE_SECTION = "PRIVATE_SECTION",
+}
+
+export enum BUSINESS_DAY_ENUM {
+  MONDAY = "MONDAY",
+  TUESDAY = "TUESDAY",
+  WEDNESDAY = "WEDNESDAY",
+  THURSDAY = "THURSDAY",
+  FRIDAY = "FRIDAY",
+  SATURDAY = "SATURDAY",
+  SUNDAY = "SUNDAY",
+}
+
+export enum ROLES_ENUM {
+  PLATFORM_USER = "PLATFORM_USER",
+  BUSINESS_USER = "BUSINESS_USER",
+  PLATFORM = "PLATFORM",
+  CLIENT = "CLIENT",
+  BRANCH = "BRANCH",
+  STAFF = "STAFF",
+  AGENCY = "AGENCY",
+  SUPER_ADMIN = "SUPER_ADMIN",
+  ADMIN = "ADMIN",
+}
+
+export enum BASE_ORGANIZATION_ROLE_ENUM {
+  CREATOR = "CREATOR",
+}
+
+export enum TIMELINE_ENUM {
+  _1m = "1m",
+  _3m = "3m",
+  _6m = "6m",
+  _1y = "1y",
+  all = "all",
+}
+
+export enum ADDRESS_TYPE_ENUM {
+  USER_HOME = "user_home",
+  USER_WORK = "user_work",
+  BUSINESS_PRIMARY = "business_primary",
+  BUSINESS_BRANCH = "business_branch",
+  CALENDAR_EVENT = "calendar_event",
+  PROFI_SERVICE_AREA = "profi_service_area",
+  ORDER_DELIVERY = "order_delivery",
+  TRAINING_VENUE = "training_venue",
+  INSTRUCTOR_LOCATION = "instructor_location",
+  BILLING_ADDRESS = "billing_address",
+  BANK_BRANCH = "bank_branch",
+  MANUFACTURER_LOCATION = "manufacturer_location",
+  SUPPLIER_LOCATION = "supplier_location",
+  WAREHOUSE_LOCATION = "warehouse_location",
+  STORAGE_LOCATION = "storage_location",
+  CREATED_CLIENT = "created_client",
+}
+
+export enum FILE_ENTITY_TYPE_ENUM {
+  USER_AVATAR = "user_avatar",
+  ORGANIZATION_LOGO = "organization_logo",
+  BUSINESS_LOGO = "business_logo",
+  PLATFORM_USER_AVATAR = "platform_user_avatar",
+}
+
 /**
  * User roles in the system
  */
@@ -11,9 +121,8 @@ export enum UserRole {
   AGENCY = "AGENCY",
 }
 
-/**
- * Base organization roles
- */
+//  * Base organization roles
+//  */
 export enum OrganizationRole {
   CREATOR = "CREATOR",
   ADMIN = "ADMIN",
